@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 123.044 s <<< FAILURE! - in TestSuite
+tests.SearchAllTest.isDisplayed  Time elapsed: 31.683 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#MessageLabel"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-5HG1GS6', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e9b324db880d00b9a89faa8f1c4a19c6, findElement {using=css selector, value=#MessageLabel}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\marun\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58485/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e9b324db880d00b9a89faa8f1c4a19c6
+	at tests.SearchAllTest.isDisplayed(SearchAllTest.java:24)
+
+tests.ForgotPasswordTest.msgText  Time elapsed: 1.507 s  <<< FAILURE!
+java.lang.AssertionError: expected [instructions on how to reset your password have been sent to the email address registered with the username provided.] but found [Instructions on how to reset your password have been sent to the email address registered with the username provided.]
+	at tests.ForgotPasswordTest.msgText(ForgotPasswordTest.java:30)
+
+tests.LoginTest.loginFailed  Time elapsed: 1.713 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <input type="submit" name="ctl00$body$SubmitButton" value="Submit" id="body_SubmitButton" class="btn btn-dark-navy-blue" style=""> is not clickable at point (166, 487). Other element would receive the click: <div class="col">...</div>
+  (Session info: chrome=97.0.4692.99)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-5HG1GS6', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05f9f4ec18eef5ddf5ab1f671f710586, clickElement {id=00fe898e-7f13-489a-9081-7d92ab9d74eb}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\marun\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58609/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (05f9f4ec18eef5ddf5ab1f671f710586)] -> css selector: #body_SubmitButton]
+Session ID: 05f9f4ec18eef5ddf5ab1f671f710586
+	at tests.LoginTest.loginFailed(LoginTest.java:15)
+
+tests.LoginTest.loginFailed  Time elapsed: 1.694 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <input type="submit" name="ctl00$body$SubmitButton" value="Submit" id="body_SubmitButton" class="btn btn-dark-navy-blue" style=""> is not clickable at point (166, 487). Other element would receive the click: <div class="col">...</div>
+  (Session info: chrome=97.0.4692.99)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-5HG1GS6', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05f9f4ec18eef5ddf5ab1f671f710586, clickElement {id=00fe898e-7f13-489a-9081-7d92ab9d74eb}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\marun\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58609/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (05f9f4ec18eef5ddf5ab1f671f710586)] -> css selector: #body_SubmitButton]
+Session ID: 05f9f4ec18eef5ddf5ab1f671f710586
+	at tests.LoginTest.loginFailed(LoginTest.java:15)
+
+tests.LoginTest.loginSucceed  Time elapsed: 11.038 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#body_Username"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-5HG1GS6', ip: '192.168.1.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05f9f4ec18eef5ddf5ab1f671f710586, findElement {using=css selector, value=#body_Username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\marun\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58609/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 05f9f4ec18eef5ddf5ab1f671f710586
+	at tests.LoginTest.loginSucceed(LoginTest.java:29)
+

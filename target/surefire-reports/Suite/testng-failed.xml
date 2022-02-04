@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test thread-count="5" verbose="0" name="Testng(failed)">
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="loginFailed" invocation-numbers="1 2"/>
+          <include name="failedTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="loginSucceed"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.SearchAllTest">
+        <methods>
+          <include name="isDisplayed"/>
+          <include name="failedTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.SearchAllTest -->
+      <class name="tests.ForgotPasswordTest">
+        <methods>
+          <include name="msgText"/>
+          <include name="failedTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.ForgotPasswordTest -->
+    </classes>
+  </test> <!-- Testng(failed) -->
+</suite> <!-- Failed suite [Suite] -->
