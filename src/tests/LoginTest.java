@@ -13,7 +13,7 @@ public class LoginTest extends BaseTest{
 		//login failed
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.login(userName, password);
-
+        System.out.println("MARINA");       
 		//should test getting the right message
 		String expected = "Sorry, either your username or password was incorrect.";
 		String actual = loginPage.getErrorMsg();
